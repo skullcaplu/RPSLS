@@ -10,7 +10,7 @@ class Rules:
         self.player2_choice = input("Player 2, Would you like to choose rock, paper, scissors, lizard, or spock? ")
 
 
-        def play_game (self):
+    def play_game (self):
         
             self.choices = ['rock', 'paper', 'scissors', 'lizard', 'spock']
             self.player1_counter = 0
@@ -193,4 +193,4 @@ class Rules:
                         self.valid_response2 = True
                     elif self.closing_message == "n":
                         print("game complete")
-                        self.valid_response2 = True
+                        self.valid_response2 = True    
