@@ -157,3 +157,8 @@ class Rules:
                     print(f"player2: ", self.player2_counter)
                     print(f"player1: ", self.player1_counter)
                     print("Spock vaporizes Rock")
+
+                elif self.player1_input == self.player2_choice:
+                    print("tie round")
+                    print(f"player2: ", self.player2_counter)
+                    print(f"player1: ", self.player1_counter)
