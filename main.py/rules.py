@@ -162,3 +162,8 @@ class Rules:
                     print("tie round")
                     print(f"player2: ", self.player2_counter)
                     print(f"player1: ", self.player1_counter)
+
+                else:
+                    print("invalid response(s) given, redo round.")
+                    print(f"player2: ", self.player2_counter)
+                    print(f"player1: ", self.player1_counter)
