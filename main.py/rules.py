@@ -1,4 +1,5 @@
 import time
+import random
 
 class Rules:
     def __init__(self):
@@ -29,3 +30,8 @@ class Rules:
                     time.sleep(.8)
                     self.player1_input = input("Player 1, Would you like to choose rock, paper, scissors, lizard, or spock? ")
                     self.player2_choice = input("Player 2, Would you like to choose rock, paper, scissors, lizard, or spock? ")
+                elif self.game_mode == "player vs cpu":
+                    print("")
+                    time.sleep(.8)
+                    self.player1_input = input("Player 1, Would you like to choose rock, paper, scissors, lizard, or spock? ")
+                    self.player2_choice = random.choice(self.choices)
