@@ -167,3 +167,30 @@ class Rules:
                     print("invalid response(s) given, redo round.")
                     print(f"player2: ", self.player2_counter)
                     print(f"player1: ", self.player1_counter)
+
+            while self.valid_response2 == False:
+                if self.player1_counter == 2:
+                    time.sleep(.8)
+                    print("player 1 won")
+                    time.sleep(.8)
+                    self.closing_message = input("do you want to play again, y/n ")
+                    if self.closing_message == "y":
+                        self.play_game(self)
+                        self.valid_response2 = True
+                        
+                    elif self.closing_message == "n":
+                        print("game complete")
+                        self.valid_response2 = True
+
+                elif self.player2_counter == 2:
+                    time.sleep(.8)
+                    print("player 2 won")
+                    time.sleep(.8)
+                    self.closing_message = input("do you want to play again, y/n ")
+                    time.sleep(.8)
+                    if self.closing_message == "y":
+                        self.play_game(self)
+                        self.valid_response2 = True
+                    elif self.closing_message == "n":
+                        print("game complete")
+                        self.valid_response2 = True
